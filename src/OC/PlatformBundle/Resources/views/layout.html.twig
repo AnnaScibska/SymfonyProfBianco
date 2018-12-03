@@ -1,0 +1,42 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+    Annonces - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+    {# On définit un sous-titre commun à toutes les pages du bundle, par exemple #}
+    <h2>Annonces</h2>
+
+    <hr>
+
+    {# On définit un nouveau bloc, que les vues du bundle pourront remplir #}
+    {% block ocplatform_body %}
+    {% endblock %}
+
+{% endblock %}
+
+{#<!DOCTYPE  HTML>#}
+{#<html>#}
+{#<head>#}
+    {#<meta charset = "utf-8">#}
+    {#<title>{%  block  title%}OC  Plateforme{%  endblock%}</title>#}
+{#</head>#}
+{#<body>#}
+
+    {#<p>hardcoded</p>#}
+    {#<a href = "www.gazeta.pl">link from layout.html.twig</a>#}
+
+    {#<div id="menu">#}
+        {#{{ render(controller("OCPlatformBundle:Advert:menu")) }}#}
+    {#</div>#}
+
+    {#{%  block  body %}#}
+
+
+
+
+    {#{%  endblock%}#}
+{#</body>#}
+{#</html>#}
